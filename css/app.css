@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+body > h1{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.container {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.container > div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-right: -4px;
+    position: relative;
+    height: 100%;
+}
+
+.container > div .label {
+    display: block;
+    height: 100px;
+    position: relative;
+}
+
+.container > div .label hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.container > div .label h2{
+    margin: 0;
+}
+
+.container > div .data {
+    overflow: auto;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.user-list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-list li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.user-list li.even {
+    background-color: #f5f5f5;
+}
+
+.user-list li:hover {
+    background-color: lightgrey;
+}
+
+.user-list li.selected {
+    background-color: lightgreen;
+}
+
+
+.user-list li span {
+    width: 33%;
+    display: inline-block;
+}

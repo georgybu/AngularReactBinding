@@ -1,0 +1,33 @@
+{
+  "name": "angularjs-reactjs-two-way-bingding",
+  "version": "0.1.0",
+  "authors": [
+    "Georgy Bunin <bunin.co.il@gmail.com>"
+  ],
+  "description": "Example of use angular and reactjs together",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "react",
+    "reactjs",
+    "two-way-binding",
+    "binding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.8",
+    "react": "~0.12.2",
+    "Faker": "~2.1.2",
+    "lodash": "~2.4.1"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="bower_components/lodash/dist/lodash.js"></script>
+	<script src="bower_components/angularjs/angular.js"></script>
+	<script src="bower_components/react/react-with-addons.js"></script>
+	<script src="bower_components/Faker/build/build/faker.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<!-- Include components-->
+	<script src="js/components/userList.directive.js"></script>
+	<script src="js/components/build/userList.jsx.js"></script>
+</head>
+<body data-ng-app="app" data-ng-controller="appCtrl">
+	<h1>Angular + React</h1>
+	<div class="container">
+		<div class="react-view">
+			<div class="label">
+				<h2>React View (render from Angular Directive)</h2>
+				<p>Click on line for select user</p>
+				<hr />
+			</div>
+			<div class="data">
+				<div data-user-list="userList"
+					 data-user-selected="selectedUsers"
+					 data-user-on-update="updateUsers(users)"></div>
+			</div>
+		</div>
+		<div class="angular-model">
+			<div class="label">
+				<h2>Use Angular Model</h2>
+				<button data-ng-click="setList()">Select first 2 rows from AngularJS</button>
+				<button data-ng-click="getUserList()">Update list (5000 elements)</button>
+				<hr />
+			</div>
+			<div class="data">
+				<pre>{{ selectedUsers | json }}</pre>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
