@@ -1,2 +1,2 @@
 # AngularReactBinding
-Example of two wat data binding (Angular => React and React => Angular)
+Example of two way data binding (Angular => React and React => Angular)
